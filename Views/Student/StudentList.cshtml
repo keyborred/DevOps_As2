@@ -1,0 +1,48 @@
+﻿@model IEnumerable<Cholo_841665_As1.Models.Student>
+
+@{
+    ViewData["Title"] = "StudentList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!--StudentList View-->
+<h1>Student List and GPA</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GPA)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GPA)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<!--Displaying of ViewBag-->
+<p>Average GPA: @ViewBag.AverageGPA</p>
