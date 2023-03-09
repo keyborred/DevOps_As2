@@ -12,7 +12,9 @@ namespace Cholo_841665_As1.Controllers
         
         public ViewResult Index() //Index methond as seen at index view
         {
-            ViewBag.myName = "Cholo Cruz"; //declaration of ViewBag
+            ViewBag.courseName = "CSD 4503 - DevOps Tool & Practices"; //declaration of ViewBag
+            ViewBag.groupNum = "CPCM Term 3 Group 2"; //declaration of ViewBag.teamMembers
+            ViewBag.teamMembers = "Franz Joseph Milanes | Lenielette Kristine Cuaresma | Pocholo Cruz"; //declaration of ViewBag.teamMembers
             return View(); // returning view
         }
 
@@ -20,14 +22,14 @@ namespace Cholo_841665_As1.Controllers
         public ViewResult StudentList()//StudentList methond as seen at StudentList view
         {
             //assigning of variables and value
-            const double S1 = 3.0;
-            const double S2 = 3.5;
-            const double S3 = 3.7;
+            const double S1 = 3.82;
+            const double S2 = 3.85;
+            const double S3 = 3.79;
             var students = new List<Student>
         {
             //student details
-            new Student { StudentID = 1, FirstName = "John", LastName = "Doe", GPA = (decimal)S1 },
-            new Student { StudentID = 2, FirstName = "Jane", LastName = "Smith", GPA = (decimal)S2 },
+            new Student { StudentID = 1, FirstName = "Franz", LastName = "Milanes", GPA = (decimal)S1 },
+            new Student { StudentID = 2, FirstName = "Lenielette", LastName = "Cuaresma", GPA = (decimal)S2 },
             new Student { StudentID = 3, FirstName = "Cholo", LastName = "Cruz", GPA = (decimal)S3 },
         };
             //calculation of average and total GPA
