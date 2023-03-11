@@ -14,7 +14,7 @@ namespace Cholo_841665_As1.Controllers
         {
             ViewBag.courseName = "CSD 4503 - DevOps Tool & Practices"; //declaration of ViewBag
             ViewBag.groupNum = "CPCM Term 3 Group 2"; //declaration of ViewBag.teamMembers
-            ViewBag.teamMembers = "Franz Joseph Milanes | Lenielette Kristine Cuaresma | Pocholo Cruz"; //declaration of ViewBag.teamMembers
+            ViewBag.teamMembers = "Franz Joseph Milanes | Pocholo Cruz | Lenielette Kristine Cuaresma"; //declaration of ViewBag.teamMembers
             return View(); // returning view
         }
 
